@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-night-950: #070c16;
+  --color-night-900: #0b1322;
+  --color-night-800: #111c31;
+  --color-night-700: #1a2740;
+  --color-ink: #e9e4d8;
+  --color-mist: #99a2b3;
+  --color-candle: #d9a45b;
+  --color-candle-soft: #f0cd92;
+  --color-candle-deep: #a97a3a;
+
+  --font-mincho: var(--font-shippori), "Hiragino Mincho ProN", "Yu Mincho",
+    serif;
+  --font-gothic: var(--font-noto-sans), "Hiragino Kaku Gothic ProN",
+    "Yu Gothic", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-night-950);
+  color: var(--color-ink);
+  font-family: var(--font-gothic);
+}
+
+::selection {
+  background: var(--color-candle-deep);
+  color: var(--color-night-950);
+}

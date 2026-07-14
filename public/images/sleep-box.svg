@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1322"/>
+      <stop offset="1" stop-color="#131d33"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.35" r="0.45">
+      <stop offset="0" stop-color="#d9a45b" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#d9a45b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="675" fill="url(#bg)"/>
+  <ellipse cx="450" cy="250" rx="280" ry="220" fill="url(#glow)"/>
+  <!-- 箱の断面 -->
+  <rect x="270" y="330" width="360" height="170" rx="12" fill="#2a2118"/>
+  <rect x="258" y="306" width="384" height="38" rx="9" fill="#332a1e"/>
+  <!-- くぼみ -->
+  <rect x="420" y="298" width="60" height="30" rx="6" fill="#1c1610"/>
+  <!-- キャンドル -->
+  <rect x="426" y="252" width="48" height="52" rx="5" fill="#e9e4d8" fill-opacity="0.92"/>
+  <rect x="448" y="236" width="4" height="18" fill="#99a2b3"/>
+  <ellipse cx="450" cy="224" rx="8" ry="14" fill="#f0cd92"/>
+  <ellipse cx="450" cy="228" rx="4" ry="7" fill="#fff4dd"/>
+  <!-- 箱の中のスマホ -->
+  <rect x="390" y="390" width="120" height="60" rx="10" fill="none" stroke="#99a2b3" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="450" y="600" text-anchor="middle" font-family="serif" font-size="16" letter-spacing="5" fill="#99a2b3" fill-opacity="0.6">PRODUCT IMAGE — 差し替え予定</text>
+</svg>
