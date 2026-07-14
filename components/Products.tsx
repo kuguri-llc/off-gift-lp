@@ -1,46 +1,41 @@
 import FadeIn from "./FadeIn";
+import SectionHeader from "./SectionHeader";
 import { asset } from "@/lib/asset";
 import { products } from "@/lib/content";
 
 export default function Products() {
   return (
-    <section className="bg-night-950 px-6 py-28 sm:py-36">
+    <section className="bg-night-950 px-6 py-36 sm:py-48">
       <div className="mx-auto max-w-5xl">
-        <FadeIn className="text-center">
-          <h2 className="font-mincho text-3xl font-medium tracking-[0.15em] text-ink sm:text-4xl">
-            {products.title}
-          </h2>
-          <p className="mt-6 text-sm leading-loose tracking-[0.08em] text-mist sm:text-base">
-            {products.lead}
-          </p>
-        </FadeIn>
+        <SectionHeader
+          label={products.label}
+          title={products.title}
+          lead={products.lead}
+        />
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {/* KITOWA流: 枠のないギャラリー形式 */}
+        <div className="mt-24 grid gap-x-10 gap-y-20 sm:grid-cols-2 lg:grid-cols-3">
           {products.items.map((item, i) => (
             <FadeIn key={item.name} delay={i * 0.08}>
-              <article className="flex h-full flex-col overflow-hidden rounded-xl border border-night-700/60 bg-night-900">
+              <article className="text-center">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={asset(item.image.src)}
                   alt={item.image.alt}
                   className="aspect-[4/3] w-full object-cover"
                 />
-                <div className="flex flex-1 flex-col p-6">
-                  <div className="flex items-baseline justify-between gap-2">
-                    <h3 className="font-mincho text-lg font-medium tracking-[0.15em] text-ink">
-                      {item.name}
-                    </h3>
-                    <span className="text-[10px] uppercase tracking-[0.3em] text-candle-deep">
-                      {item.en}
-                    </span>
-                  </div>
-                  <p className="mt-3 flex-1 text-sm leading-relaxed tracking-[0.05em] text-mist">
-                    {item.description}
-                  </p>
-                  <p className="mt-4 font-mincho text-sm tracking-[0.1em] text-candle-soft">
-                    {item.price}
-                  </p>
-                </div>
+                <p className="mt-7 text-[10px] tracking-[0.4em] text-candle-deep">
+                  {item.en.toUpperCase()}
+                </p>
+                <h3 className="mt-3 font-mincho text-base font-medium tracking-[0.2em] text-ink">
+                  {item.name}
+                </h3>
+                <p className="mx-auto mt-4 max-w-xs text-sm leading-loose tracking-[0.04em] text-mist">
+                  {item.description}
+                </p>
+                <p className="mt-4 text-xs tracking-[0.2em] text-candle-soft">
+                  {item.price}
+                </p>
               </article>
             </FadeIn>
           ))}

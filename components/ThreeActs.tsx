@@ -1,33 +1,31 @@
 import FadeIn from "./FadeIn";
+import SectionHeader from "./SectionHeader";
 import { threeActs } from "@/lib/content";
 
 export default function ThreeActs() {
   return (
-    <section className="bg-night-900 px-6 py-28 sm:py-36">
+    <section className="bg-night-900 px-6 py-36 sm:py-48">
       <div className="mx-auto max-w-5xl">
-        <FadeIn className="text-center">
-          <h2 className="font-mincho text-3xl font-medium tracking-[0.15em] text-ink sm:text-4xl">
-            {threeActs.title}
-          </h2>
-          <p className="mx-auto mt-6 max-w-xl text-sm leading-loose tracking-[0.08em] text-mist sm:text-base">
-            {threeActs.lead}
-          </p>
-        </FadeIn>
+        <SectionHeader
+          label={threeActs.label}
+          title={threeActs.title}
+          lead={threeActs.lead}
+        />
 
-        <div className="mt-20 grid gap-14 sm:grid-cols-3 sm:gap-8">
+        <div className="mt-24 grid gap-16 sm:grid-cols-3 sm:gap-10">
           {threeActs.acts.map((act, i) => (
             <FadeIn key={act.name} delay={i * 0.15} className="text-center">
-              <p className="font-mincho text-xs tracking-[0.4em] text-candle">
+              <p className="font-mincho text-[11px] tracking-[0.5em] text-candle">
                 {act.act}
               </p>
-              <p className="mt-4 font-mincho text-2xl font-medium tracking-[0.3em] text-ink">
+              <p className="mt-5 font-mincho text-xl font-medium tracking-[0.4em] text-ink">
                 {act.name}
               </p>
               <div
                 aria-hidden
-                className="mx-auto mt-6 h-px w-10 bg-candle-deep/50"
+                className="mx-auto mt-8 h-px w-8 bg-candle-deep/40"
               />
-              <p className="mt-6 text-sm leading-loose tracking-[0.05em] text-mist">
+              <p className="mt-8 text-sm leading-loose tracking-[0.05em] text-mist">
                 {act.description}
               </p>
             </FadeIn>

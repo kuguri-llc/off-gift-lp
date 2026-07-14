@@ -1,43 +1,38 @@
 import FadeIn from "./FadeIn";
+import SectionHeader from "./SectionHeader";
 import { plans } from "@/lib/content";
 
 export default function Pricing() {
   return (
-    <section className="bg-night-900 px-6 py-28 sm:py-36">
+    <section className="bg-night-900 px-6 py-36 sm:py-48">
       <div className="mx-auto max-w-5xl">
-        <FadeIn className="text-center">
-          <h2 className="font-mincho text-3xl font-medium tracking-[0.15em] text-ink sm:text-4xl">
-            {plans.title}
-          </h2>
-        </FadeIn>
+        <SectionHeader label={plans.label} title={plans.title} />
 
-        <div className="mt-16 grid gap-6 lg:grid-cols-3">
+        {/* KITOWA流: 箱で囲わず、細い罫線だけで区切る */}
+        <div className="mt-24 grid gap-16 lg:grid-cols-3 lg:gap-10">
           {plans.items.map((plan, i) => (
             <FadeIn key={plan.name} delay={i * 0.12} className="h-full">
               <article
-                className={`flex h-full flex-col rounded-xl border p-8 ${
-                  plan.featured
-                    ? "border-candle-deep/70 bg-night-800 shadow-[0_0_50px_rgba(217,164,91,0.08)]"
-                    : "border-night-700/60 bg-night-950/60"
+                className={`flex h-full flex-col border-t pt-10 ${
+                  plan.featured ? "border-candle" : "border-night-700"
                 }`}
               >
-                <h3 className="font-mincho text-xl font-medium tracking-[0.2em] text-ink">
+                <h3 className="font-mincho text-lg font-medium tracking-[0.25em] text-ink">
                   {plan.name}
                 </h3>
-                <p className="mt-4 font-mincho text-2xl tracking-[0.1em] text-candle-soft">
+                <p className="mt-5 font-mincho text-xl tracking-[0.15em] text-candle-soft">
                   {plan.price}
                 </p>
-                <p className="mt-5 text-sm leading-loose tracking-[0.05em] text-mist">
+                <p className="mt-6 text-sm leading-loose tracking-[0.05em] text-mist">
                   {plan.description}
                 </p>
-                <ul className="mt-8 space-y-3 border-t border-night-700/60 pt-6">
+                <ul className="mt-10 space-y-4">
                   {plan.features.map((feature) => (
                     <li
                       key={feature}
-                      className="flex items-start gap-3 text-sm leading-relaxed text-mist"
+                      className="text-sm leading-relaxed tracking-[0.05em] text-mist"
                     >
-                      <span aria-hidden className="mt-2 h-1 w-1 shrink-0 rounded-full bg-candle" />
-                      {feature}
+                      — {feature}
                     </li>
                   ))}
                 </ul>
@@ -46,8 +41,8 @@ export default function Pricing() {
           ))}
         </div>
 
-        <FadeIn className="mt-10 text-center">
-          <p className="text-xs tracking-[0.15em] text-mist">{plans.note}</p>
+        <FadeIn className="mt-16 text-center">
+          <p className="text-xs tracking-[0.2em] text-mist/70">{plans.note}</p>
         </FadeIn>
       </div>
     </section>

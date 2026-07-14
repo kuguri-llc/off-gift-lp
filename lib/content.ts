@@ -18,6 +18,7 @@ export const hero = {
 };
 
 export const question = {
+  label: "CONCEPT",
   title: ["一日の終わりも、", "画面の中にいませんか。"],
   body: [
     "仕事を終えて、家に着いて、湯船に浸かっても。",
@@ -28,6 +29,7 @@ export const question = {
 };
 
 export const threeActs = {
+  label: "ONE NIGHT, THREE ACTS",
   title: "夜に、三つの幕を。",
   lead: "「オフを贈ろう」が贈るのは、モノではなく、帰宅から眠りまでのひと晩の体験です。",
   acts: [
@@ -53,6 +55,7 @@ export const threeActs = {
 };
 
 export const products = {
+  label: "CONTENTS",
   title: "箱の中身",
   lead: "夜のための道具を、少しずつ。どれも単品でも贈れます。",
   items: [
@@ -112,6 +115,7 @@ export const products = {
 };
 
 export const sleepBox = {
+  label: "SIGNATURE",
   title: "スマホを、眠らせる箱。",
   lead: "このブランドの、いちばん静かな発明です。",
   description:
@@ -128,6 +132,7 @@ export const sleepBox = {
 };
 
 export const shiori = {
+  label: "GUIDE",
   title: "今夜の過ごし方は、栞にまかせて。",
   body: [
     "すべてのセットに、一枚の栞が入っています。",
@@ -138,6 +143,7 @@ export const shiori = {
 };
 
 export const plans = {
+  label: "GIFT SETS",
   title: "贈りかたは、三つ。",
   note: "価格はすべて税込・予定価格です。",
   items: [
@@ -173,6 +179,7 @@ export const plans = {
 };
 
 export const scenes = {
+  label: "OCCASIONS",
   title: "贈るのに、理由はいりません。",
   items: [
     { title: "お礼に", text: "「ありがとう」に、休息を添えて。" },
@@ -183,6 +190,7 @@ export const scenes = {
 };
 
 export const newsletter = {
+  label: "NEWSLETTER",
   title: "発売のお知らせを、静かにお届けします。",
   body: "準備が整ったら、メールを一通だけお送りします。夜のじゃまはしません。",
   placeholder: "メールアドレス",
