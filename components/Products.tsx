@@ -1,4 +1,5 @@
 import FadeIn from "./FadeIn";
+import { asset } from "@/lib/asset";
 import { products } from "@/lib/content";
 
 export default function Products() {
@@ -20,7 +21,7 @@ export default function Products() {
               <article className="flex h-full flex-col overflow-hidden rounded-xl border border-night-700/60 bg-night-900">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={item.image.src}
+                  src={asset(item.image.src)}
                   alt={item.image.alt}
                   className="aspect-[4/3] w-full object-cover"
                 />

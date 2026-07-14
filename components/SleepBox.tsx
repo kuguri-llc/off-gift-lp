@@ -1,4 +1,5 @@
 import FadeIn from "./FadeIn";
+import { asset } from "@/lib/asset";
 import { sleepBox } from "@/lib/content";
 
 export default function SleepBox() {
@@ -8,7 +9,7 @@ export default function SleepBox() {
         <FadeIn>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={sleepBox.image.src}
+            src={asset(sleepBox.image.src)}
             alt={sleepBox.image.alt}
             className="w-full rounded-2xl shadow-[0_0_60px_rgba(217,164,91,0.07)]"
           />

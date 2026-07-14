@@ -1,4 +1,5 @@
 import FadeIn from "./FadeIn";
+import { asset } from "@/lib/asset";
 import { site, hero } from "@/lib/content";
 
 export default function Hero() {
@@ -34,7 +35,7 @@ export default function Hero() {
       <FadeIn delay={0.45} className="mt-16 w-full max-w-2xl">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={hero.image.src}
+          src={asset(hero.image.src)}
           alt={hero.image.alt}
           className="mx-auto w-full rounded-2xl shadow-[0_0_80px_rgba(217,164,91,0.08)]"
         />
