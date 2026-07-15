@@ -1,15 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-night-950: #101a2e;
-  --color-night-900: #17233c;
-  --color-night-800: #1e2c4a;
-  --color-night-700: #2e4066;
-  --color-ink: #f4f0e6;
-  --color-mist: #bcc5d6;
-  --color-candle: #e4b167;
-  --color-candle-soft: #f5d7a1;
-  --color-candle-deep: #c99450;
+  /* KITOWA調: 生成りの白×墨色。アンバーは灯りのアクセントとして最小限に */
+  --color-paper: #fbfaf6;
+  --color-paper-soft: #f4f1ea;
+  --color-ink: #26292e;
+  --color-sumi: #555b64;
+  --color-mist: #979da6;
+  --color-line: #e4e0d5;
+  --color-candle: #b6874a;
+  --color-candle-soft: #d9b98a;
+  --color-candle-deep: #8f6a39;
 
   --font-mincho: var(--font-shippori), "Hiragino Mincho ProN", "Yu Mincho",
     serif;
@@ -22,12 +23,12 @@ html {
 }
 
 body {
-  background: var(--color-night-950);
+  background: var(--color-paper);
   color: var(--color-ink);
   font-family: var(--font-gothic);
 }
 
 ::selection {
-  background: var(--color-candle-deep);
-  color: var(--color-night-950);
+  background: var(--color-candle);
+  color: var(--color-paper);
 }

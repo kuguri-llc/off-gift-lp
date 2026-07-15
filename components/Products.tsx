@@ -5,7 +5,7 @@ import { products } from "@/lib/content";
 
 export default function Products() {
   return (
-    <section className="bg-night-950 px-6 py-36 sm:py-48">
+    <section className="bg-paper-soft px-6 py-36 sm:py-48">
       <div className="mx-auto max-w-5xl">
         <SectionHeader
           label={products.label}
@@ -24,16 +24,16 @@ export default function Products() {
                   alt={item.image.alt}
                   className="aspect-[4/3] w-full object-cover"
                 />
-                <p className="mt-7 text-[10px] tracking-[0.4em] text-candle-deep">
+                <p className="mt-7 text-[10px] tracking-[0.4em] text-mist">
                   {item.en.toUpperCase()}
                 </p>
                 <h3 className="mt-3 font-mincho text-base font-medium tracking-[0.2em] text-ink">
                   {item.name}
                 </h3>
-                <p className="mx-auto mt-4 max-w-xs text-sm leading-loose tracking-[0.04em] text-mist">
+                <p className="mx-auto mt-4 max-w-xs text-sm leading-loose tracking-[0.04em] text-sumi">
                   {item.description}
                 </p>
-                <p className="mt-4 text-xs tracking-[0.2em] text-candle-soft">
+                <p className="mt-4 text-xs tracking-[0.2em] text-ink">
                   {item.price}
                 </p>
               </article>

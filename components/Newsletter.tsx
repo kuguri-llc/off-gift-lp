@@ -17,29 +17,22 @@ export default function Newsletter() {
   };
 
   return (
-    <section
-      id="newsletter"
-      className="relative overflow-hidden bg-night-900 px-6 py-40 sm:py-52"
-    >
-      <div
-        aria-hidden
-        className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_100%,rgba(217,164,91,0.08),transparent_65%)]"
-      />
-      <FadeIn className="relative mx-auto max-w-xl text-center">
-        <p className="text-[11px] tracking-[0.5em] text-candle">
+    <section id="newsletter" className="bg-paper px-6 py-40 sm:py-52">
+      <FadeIn className="mx-auto max-w-xl text-center">
+        <p className="text-[11px] tracking-[0.5em] text-mist">
           {newsletter.label}
         </p>
         <h2 className="mt-10 font-mincho text-xl font-medium leading-loose tracking-[0.2em] text-ink sm:text-2xl">
           {newsletter.title}
         </h2>
-        <p className="mt-8 text-sm leading-loose tracking-[0.08em] text-mist">
+        <p className="mt-8 text-sm leading-loose tracking-[0.08em] text-sumi">
           {newsletter.body}
         </p>
 
         {submitted ? (
           <p
             role="status"
-            className="mt-14 font-mincho text-sm leading-loose tracking-[0.2em] text-candle-soft"
+            className="mt-14 font-mincho text-sm leading-loose tracking-[0.2em] text-candle-deep"
           >
             {newsletter.success}
           </p>
@@ -58,18 +51,18 @@ export default function Newsletter() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder={newsletter.placeholder}
-              className="w-full flex-1 border-b border-night-700 bg-transparent px-1 py-3 text-sm tracking-wide text-ink placeholder:text-mist/70 focus:border-candle-deep focus:outline-none"
+              className="w-full flex-1 border-b border-line bg-transparent px-1 py-3 text-sm tracking-wide text-ink placeholder:text-mist focus:border-ink focus:outline-none"
             />
             <button
               type="submit"
-              className="border border-candle-deep/50 px-10 py-3.5 text-xs tracking-[0.3em] text-candle-soft transition-colors duration-500 hover:bg-candle/10"
+              className="border border-ink/60 px-10 py-3.5 text-xs tracking-[0.3em] text-ink transition-colors duration-500 hover:bg-ink hover:text-paper"
             >
               {newsletter.button}
             </button>
           </form>
         )}
 
-        <p className="mt-10 text-xs tracking-[0.15em] text-mist/85">
+        <p className="mt-10 text-xs tracking-[0.15em] text-mist">
           {newsletter.privacy}
         </p>
       </FadeIn>

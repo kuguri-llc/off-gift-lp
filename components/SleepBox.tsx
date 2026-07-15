@@ -4,7 +4,7 @@ import { sleepBox } from "@/lib/content";
 
 export default function SleepBox() {
   return (
-    <section className="bg-night-900 px-6 py-36 sm:py-48">
+    <section className="bg-paper px-6 py-36 sm:py-48">
       <div className="mx-auto grid max-w-5xl items-center gap-16 lg:grid-cols-2 lg:gap-20">
         <FadeIn>
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -16,16 +16,16 @@ export default function SleepBox() {
         </FadeIn>
 
         <FadeIn delay={0.15}>
-          <p className="text-[11px] tracking-[0.5em] text-candle">
+          <p className="text-[11px] tracking-[0.5em] text-mist">
             {sleepBox.label}
           </p>
-          <p className="mt-7 font-mincho text-xs tracking-[0.3em] text-mist">
+          <p className="mt-7 font-mincho text-xs tracking-[0.3em] text-candle-deep">
             {sleepBox.lead}
           </p>
           <h2 className="mt-4 font-mincho text-2xl font-medium leading-snug tracking-[0.15em] text-ink sm:text-3xl">
             {sleepBox.title}
           </h2>
-          <p className="mt-10 text-sm leading-loose tracking-[0.05em] text-mist sm:text-base">
+          <p className="mt-10 text-sm leading-loose tracking-[0.05em] text-sumi sm:text-base">
             {sleepBox.description}
           </p>
 
@@ -34,7 +34,7 @@ export default function SleepBox() {
               <li key={step.title} className="flex items-start gap-6">
                 <span
                   aria-hidden
-                  className="mt-1 font-mincho text-xs tracking-[0.2em] text-candle"
+                  className="mt-1 font-mincho text-xs tracking-[0.2em] text-candle-deep"
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
@@ -42,7 +42,7 @@ export default function SleepBox() {
                   <p className="font-mincho tracking-[0.25em] text-ink">
                     {step.title}
                   </p>
-                  <p className="mt-2 text-sm leading-relaxed text-mist">
+                  <p className="mt-2 text-sm leading-relaxed text-sumi">
                     {step.text}
                   </p>
                 </div>

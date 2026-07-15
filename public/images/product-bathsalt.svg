@@ -1,12 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="placeholder">
-  <rect width="800" height="600" fill="#182741"/>
-  <ellipse cx="400" cy="300" rx="240" ry="200" fill="#e4b167" fill-opacity="0.07"/>
+  <rect width="800" height="600" fill="#edeae0"/>
   <!-- ガラス瓶 -->
-  <rect x="330" y="200" width="140" height="200" rx="18" fill="none" stroke="#bcc5d6" stroke-opacity="0.5" stroke-width="3"/>
-  <rect x="352" y="176" width="96" height="26" rx="6" fill="#332a1e"/>
-  <path d="M336 320 h128 v62 a16 16 0 0 1 -16 16 h-96 a16 16 0 0 1 -16 -16 z" fill="#e4b167" fill-opacity="0.35"/>
-  <circle cx="370" cy="350" r="4" fill="#f5d7a1" fill-opacity="0.7"/>
-  <circle cx="410" cy="366" r="3" fill="#f5d7a1" fill-opacity="0.8"/>
-  <circle cx="436" cy="344" r="3.5" fill="#f5d7a1" fill-opacity="0.7"/>
-  <text x="400" y="520" text-anchor="middle" font-family="serif" font-size="15" letter-spacing="5" fill="#bcc5d6" fill-opacity="0.8">BATH SALT — 差し替え予定</text>
+  <rect x="336" y="212" width="128" height="180" rx="14" fill="none" stroke="#a89f8d" stroke-width="2"/>
+  <rect x="354" y="190" width="92" height="24" rx="4" fill="none" stroke="#a89f8d" stroke-width="2"/>
+  <path d="M342 320 h116" stroke="#bdb5a4" stroke-width="1.5"/>
+  <circle cx="376" cy="348" r="3" fill="#b6874a" fill-opacity="0.6"/>
+  <circle cx="408" cy="364" r="2.5" fill="#b6874a" fill-opacity="0.5"/>
+  <circle cx="430" cy="342" r="3" fill="#b6874a" fill-opacity="0.6"/>
+  <ellipse cx="400" cy="430" rx="110" ry="7" fill="#e0dcd0"/>
 </svg>

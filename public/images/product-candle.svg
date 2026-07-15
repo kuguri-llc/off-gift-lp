@@ -1,11 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="placeholder">
-  <rect width="800" height="600" fill="#182741"/>
-  <ellipse cx="400" cy="260" rx="220" ry="190" fill="#e4b167" fill-opacity="0.1"/>
+  <rect width="800" height="600" fill="#edeae0"/>
   <!-- キャンドル -->
-  <rect x="340" y="250" width="120" height="150" rx="12" fill="#e9e4d8" fill-opacity="0.9"/>
-  <rect x="398" y="222" width="4" height="30" fill="#bcc5d6"/>
-  <ellipse cx="400" cy="204" rx="12" ry="20" fill="#f5d7a1"/>
-  <ellipse cx="400" cy="210" rx="6" ry="10" fill="#fff4dd"/>
-  <ellipse cx="400" cy="412" rx="110" ry="16" fill="#000" fill-opacity="0.25"/>
-  <text x="400" y="520" text-anchor="middle" font-family="serif" font-size="15" letter-spacing="5" fill="#bcc5d6" fill-opacity="0.8">CANDLE — 差し替え予定</text>
+  <rect x="346" y="252" width="108" height="140" rx="8" fill="none" stroke="#a89f8d" stroke-width="2"/>
+  <line x1="400" y1="230" x2="400" y2="252" stroke="#a89f8d" stroke-width="1.5"/>
+  <path d="M400 196 q11 15 0 28 q-11 -13 0 -28" fill="#b6874a"/>
+  <ellipse cx="400" cy="430" rx="110" ry="7" fill="#e0dcd0"/>
 </svg>

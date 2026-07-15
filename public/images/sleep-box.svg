@@ -1,27 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-label="placeholder">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#17233c"/>
-      <stop offset="1" stop-color="#1e2c4a"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.35" r="0.45">
-      <stop offset="0" stop-color="#e4b167" stop-opacity="0.45"/>
-      <stop offset="1" stop-color="#e4b167" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-  <rect width="900" height="675" fill="url(#bg)"/>
-  <ellipse cx="450" cy="250" rx="280" ry="220" fill="url(#glow)"/>
+  <rect width="900" height="675" fill="#edeae0"/>
   <!-- 箱の断面 -->
-  <rect x="270" y="330" width="360" height="170" rx="12" fill="#2a2118"/>
-  <rect x="258" y="306" width="384" height="38" rx="9" fill="#332a1e"/>
+  <rect x="290" y="330" width="320" height="150" rx="4" fill="none" stroke="#a89f8d" stroke-width="2"/>
+  <rect x="278" y="304" width="344" height="30" rx="4" fill="none" stroke="#a89f8d" stroke-width="2"/>
   <!-- くぼみ -->
-  <rect x="420" y="298" width="60" height="30" rx="6" fill="#1c1610"/>
+  <path d="M424 304 v14 h52 v-14" fill="none" stroke="#a89f8d" stroke-width="1.5"/>
   <!-- キャンドル -->
-  <rect x="426" y="252" width="48" height="52" rx="5" fill="#e9e4d8" fill-opacity="0.92"/>
-  <rect x="448" y="236" width="4" height="18" fill="#bcc5d6"/>
-  <ellipse cx="450" cy="224" rx="8" ry="14" fill="#f5d7a1"/>
-  <ellipse cx="450" cy="228" rx="4" ry="7" fill="#fff4dd"/>
+  <rect x="428" y="252" width="44" height="50" rx="3" fill="none" stroke="#a89f8d" stroke-width="2"/>
+  <line x1="450" y1="238" x2="450" y2="252" stroke="#a89f8d" stroke-width="1.5"/>
+  <path d="M450 214 q9 12 0 22 q-9 -10 0 -22" fill="#b6874a"/>
   <!-- 箱の中のスマホ -->
-  <rect x="390" y="390" width="120" height="60" rx="10" fill="none" stroke="#bcc5d6" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6 6"/>
-  <text x="450" y="600" text-anchor="middle" font-family="serif" font-size="16" letter-spacing="5" fill="#bcc5d6" fill-opacity="0.8">PRODUCT IMAGE — 差し替え予定</text>
+  <rect x="398" y="382" width="104" height="52" rx="8" fill="none" stroke="#bdb5a4" stroke-width="1.5" stroke-dasharray="5 6"/>
+  <ellipse cx="450" cy="530" rx="170" ry="8" fill="#e0dcd0"/>
 </svg>

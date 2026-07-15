@@ -1,11 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="placeholder">
-  <rect width="800" height="600" fill="#182741"/>
-  <ellipse cx="400" cy="300" rx="240" ry="200" fill="#e4b167" fill-opacity="0.07"/>
+  <rect width="800" height="600" fill="#edeae0"/>
   <!-- カップ -->
-  <path d="M300 300 h200 v70 a80 60 0 0 1 -200 0 z" fill="none" stroke="#bcc5d6" stroke-opacity="0.55" stroke-width="3"/>
-  <path d="M500 312 q52 8 0 52" fill="none" stroke="#bcc5d6" stroke-opacity="0.55" stroke-width="3"/>
-  <ellipse cx="400" cy="300" rx="100" ry="16" fill="#c99450" fill-opacity="0.5"/>
+  <path d="M310 296 h180 v62 a72 54 0 0 1 -180 0 z" fill="none" stroke="#a89f8d" stroke-width="2"/>
+  <path d="M490 308 q46 8 0 46" fill="none" stroke="#a89f8d" stroke-width="2"/>
+  <ellipse cx="400" cy="296" rx="90" ry="13" fill="none" stroke="#bdb5a4" stroke-width="1.5"/>
   <!-- 湯気 -->
-  <path d="M380 270 q-10 -22 4 -42 M420 270 q-10 -22 4 -42" fill="none" stroke="#bcc5d6" stroke-opacity="0.35" stroke-width="2.5" stroke-linecap="round"/>
-  <text x="400" y="520" text-anchor="middle" font-family="serif" font-size="15" letter-spacing="5" fill="#bcc5d6" fill-opacity="0.8">HERB TEA — 差し替え予定</text>
+  <path d="M382 268 q-9 -20 4 -38 M418 268 q-9 -20 4 -38" fill="none" stroke="#bdb5a4" stroke-width="1.8" stroke-linecap="round"/>
+  <ellipse cx="400" cy="440" rx="110" ry="7" fill="#e0dcd0"/>
 </svg>
