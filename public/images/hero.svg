@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="placeholder">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0b1322"/>
-      <stop offset="1" stop-color="#111c31"/>
+      <stop offset="0" stop-color="#17233c"/>
+      <stop offset="1" stop-color="#1e2c4a"/>
     </linearGradient>
     <radialGradient id="glow" cx="0.5" cy="0.42" r="0.5">
-      <stop offset="0" stop-color="#d9a45b" stop-opacity="0.5"/>
-      <stop offset="1" stop-color="#d9a45b" stop-opacity="0"/>
+      <stop offset="0" stop-color="#e4b167" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#e4b167" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="1200" height="675" fill="url(#bg)"/>
@@ -15,11 +15,11 @@
   <rect x="420" y="380" width="360" height="150" rx="10" fill="#2a2118"/>
   <rect x="410" y="360" width="380" height="34" rx="8" fill="#332a1e"/>
   <!-- 眠るスマホ（箱の中の気配） -->
-  <rect x="540" y="430" width="120" height="64" rx="10" fill="none" stroke="#99a2b3" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6 6"/>
+  <rect x="540" y="430" width="120" height="64" rx="10" fill="none" stroke="#bcc5d6" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6 6"/>
   <!-- 蓋のくぼみのキャンドル -->
   <rect x="572" y="308" width="56" height="56" rx="6" fill="#e9e4d8" fill-opacity="0.92"/>
-  <rect x="597" y="292" width="4" height="18" fill="#99a2b3"/>
-  <ellipse cx="599" cy="280" rx="9" ry="15" fill="#f0cd92"/>
+  <rect x="597" y="292" width="4" height="18" fill="#bcc5d6"/>
+  <ellipse cx="599" cy="280" rx="9" ry="15" fill="#f5d7a1"/>
   <ellipse cx="599" cy="284" rx="4.5" ry="8" fill="#fff4dd"/>
-  <text x="600" y="620" text-anchor="middle" font-family="serif" font-size="18" letter-spacing="6" fill="#99a2b3" fill-opacity="0.6">KEY VISUAL — 差し替え予定</text>
+  <text x="600" y="620" text-anchor="middle" font-family="serif" font-size="18" letter-spacing="6" fill="#bcc5d6" fill-opacity="0.8">KEY VISUAL — 差し替え予定</text>
 </svg>

@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-night-950: #070c16;
-  --color-night-900: #0b1322;
-  --color-night-800: #111c31;
-  --color-night-700: #1a2740;
-  --color-ink: #e9e4d8;
-  --color-mist: #99a2b3;
-  --color-candle: #d9a45b;
-  --color-candle-soft: #f0cd92;
-  --color-candle-deep: #a97a3a;
+  --color-night-950: #101a2e;
+  --color-night-900: #17233c;
+  --color-night-800: #1e2c4a;
+  --color-night-700: #2e4066;
+  --color-ink: #f4f0e6;
+  --color-mist: #bcc5d6;
+  --color-candle: #e4b167;
+  --color-candle-soft: #f5d7a1;
+  --color-candle-deep: #c99450;
 
   --font-mincho: var(--font-shippori), "Hiragino Mincho ProN", "Yu Mincho",
     serif;

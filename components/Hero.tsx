@@ -8,7 +8,7 @@ export default function Hero() {
       {/* 夜空のグラデーションと、灯りのにじみ */}
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_60%_at_50%_110%,rgba(217,164,91,0.12),transparent_60%),linear-gradient(to_bottom,#070c16,#0b1322_70%,#111c31)]"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_60%_at_50%_110%,rgba(228,177,103,0.16),transparent_60%),linear-gradient(to_bottom,#101a2e,#17233c_70%,#1e2c4a)]"
       />
 
       <FadeIn>

@@ -42,7 +42,7 @@ export default function Pricing() {
         </div>
 
         <FadeIn className="mt-16 text-center">
-          <p className="text-xs tracking-[0.2em] text-mist/70">{plans.note}</p>
+          <p className="text-xs tracking-[0.2em] text-mist/90">{plans.note}</p>
         </FadeIn>
       </div>
     </section>

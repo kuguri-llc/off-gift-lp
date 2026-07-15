@@ -21,7 +21,7 @@ export default function Footer() {
             ))}
           </ul>
         </nav>
-        <p className="text-xs tracking-[0.15em] text-mist/60">
+        <p className="text-xs tracking-[0.15em] text-mist/85">
           {footer.copyright}
         </p>
       </div>

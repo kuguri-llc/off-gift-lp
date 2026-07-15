@@ -58,7 +58,7 @@ export default function Newsletter() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder={newsletter.placeholder}
-              className="w-full flex-1 border-b border-night-700 bg-transparent px-1 py-3 text-sm tracking-wide text-ink placeholder:text-mist/50 focus:border-candle-deep focus:outline-none"
+              className="w-full flex-1 border-b border-night-700 bg-transparent px-1 py-3 text-sm tracking-wide text-ink placeholder:text-mist/70 focus:border-candle-deep focus:outline-none"
             />
             <button
               type="submit"
@@ -69,7 +69,7 @@ export default function Newsletter() {
           </form>
         )}
 
-        <p className="mt-10 text-xs tracking-[0.15em] text-mist/60">
+        <p className="mt-10 text-xs tracking-[0.15em] text-mist/85">
           {newsletter.privacy}
         </p>
       </FadeIn>
